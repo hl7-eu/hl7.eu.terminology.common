@@ -16,6 +16,13 @@ publisher:
   url: http://hl7europe.org
   # email: test@example.org
 
+pages:
+  index.md:
+    title: Home page
+
+  # translations.md:
+  #   title: Translation Progress
+
 menu:
   Home: index.html
   Artifacts:
