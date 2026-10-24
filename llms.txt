@@ -1,0 +1,42 @@
+# hl7.eu.terminology.common#0.4.0: EU Common Terminologies
+
+## Pages
+
+* [Home page](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [ATC classification system](CodeSystem-atc.md)
+* [EDQM](CodeSystem-edqm.md)
+* [EMDN CodeSystem](CodeSystem-emdn.md)
+* [Laboratory Code: example](CodeSystem-lab-localCs-eu-lab.md)
+
+### ValueSets
+
+* [eHDSI Laboratory Study Types](ValueSet-eHDSILabStudyType.md)
+* [Laboratory Certified Reference Material](ValueSet-lab-certifiedRefMaterial-eu-lab.md)
+* [Body Structure Laterality](ValueSet-lab-laterality-eu-lab.md)
+* [Laboratory Code](ValueSet-lab-obsCode-eu-lab.md)
+* [Laboratory Code: LOINC](ValueSet-lab-obsCode-loinc-eu-lab.md)
+* [Laboratory Code: NPU](ValueSet-lab-obsCode-npu-eu-lab.md)
+* [Laboratory Order](ValueSet-lab-orderCodes-eu-lab.md)
+* [Laboratory Report Types](ValueSet-lab-reportType-eu-lab.md)
+* [Body Structure Qualifier](ValueSet-lab-siteQualifier-eu-lab.md)
+* [Laboratory Specialty](ValueSet-lab-specialty-eu-lab.md)
+* [Types of species](ValueSet-lab-speciesType-eu-vs.md)
+* [Specimen Additive](ValueSet-lab-specimenAdditive-eu-lab.md)
+* [Specimen Container](ValueSet-lab-specimenContainer-eu-lab.md)
+* [Specimen Types](ValueSet-lab-specimenType-eu-lab.md)
+* [Laboratory Study Types](ValueSet-lab-studyType-eu-lab.md)
+* [Laboratory Techniques](ValueSet-lab-technique-eu-lab.md)
+* [Results Blood Group - IPS](ValueSet-results-blood-group-uv-ips.md)
+* [Results Coded Values Laboratory - IPS](ValueSet-results-coded-values-laboratory-uv-ips.md)
+* [Results Microorganism - IPS](ValueSet-results-microorganism-uv-ips.md)
+* [Results Presence/Absence - IPS](ValueSet-results-presence-absence-uv-ips.md)
+
+### ImplementationGuides
+
+* [EU Common Terminologies](index.md)

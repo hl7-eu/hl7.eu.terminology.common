@@ -1,0 +1,55 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "lab-localCs-eu-lab",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative"
+  }],
+  "url" : "http://example.org/lab-codes",
+  "version" : "0.4.0",
+  "name" : "LaboratoryLocalCS",
+  "title" : "Laboratory Code: example",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-24T21:00:57+00:00",
+  "publisher" : "HL7 Europe",
+  "contact" : [{
+    "name" : "HL7 Europe",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7europe.org"
+    }]
+  }],
+  "description" : "List of local coded concepts used for supporting the examples defined in this guide.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "3002989",
+    "display" : "Hepatitis Panel, Acute with Reflex to HBsAg Confirmation and Reflex to HCV by Quantitative NAAT"
+  },
+  {
+    "code" : "0020089",
+    "display" : "Hepatitis B Surface Antigen"
+  },
+  {
+    "code" : "0020092",
+    "display" : "Hepatitis B Core Antibody, IgM"
+  },
+  {
+    "code" : "0020093",
+    "display" : "Hepatitis A Antibody, IgM"
+  },
+  {
+    "code" : "3003128",
+    "display" : "Hepatitis C Antibody by CIA Interp"
+  },
+  {
+    "code" : "2002404",
+    "display" : "Hepatitis C Antibody by CIA Index"
+  }]
+}

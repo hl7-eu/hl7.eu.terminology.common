@@ -1,0 +1,153 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7europe.org/fhir/terminology/common/ValueSet/lab-siteQualifier-eu-lab> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "lab-siteQualifier-eu-lab"] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [ fhir:value "2"^^xsd:integer ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "trial-use" ]
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://hl7europe.org/fhir/terminology/common/ValueSet/lab-siteQualifier-eu-lab"] ;
+  fhir:ValueSet.version [ fhir:value "0.4.0"] ;
+  fhir:ValueSet.name [ fhir:value "LabSiteQualifierEuVs"] ;
+  fhir:ValueSet.title [ fhir:value "Body Structure Qualifier"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-24T21:10:34+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "HL7 Europe"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Europe" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7europe.org" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Body Structure site qualifier. It indicates the body site qualifier from which a laboratory specimen is collected. (based on SNOMED CT)"] ;
+  fhir:ValueSet.copyright [ fhir:value "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7771000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "24028007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51440002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilateral" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "46053002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Distal" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255554000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dorsal" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "261183002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Upper" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "261122009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lower" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255561001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medial" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49370004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lateral" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264217000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superior" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "261089000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inferior" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255551008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Posterior" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "351726001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Below" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "352730000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Above" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "40415009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Proximal (qualifier value)" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255549009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anterior (qualifier value)" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26283006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superficial (qualifier value)" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "795002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deep (qualifier value)" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57195005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basal (qualifier value)" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3583002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Caudal (qualifier value)" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66787007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cephalic (qualifier value)" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255481003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left upper quadrant (qualifier value)" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255497008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right upper quadrant (qualifier value)" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255480002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left lower quadrant (qualifier value)" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255495000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right lower quadrant (qualifier value)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7europe.org/fhir/terminology/common/ValueSet/lab-siteQualifier-eu-lab.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

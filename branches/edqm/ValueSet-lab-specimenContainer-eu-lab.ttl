@@ -1,0 +1,297 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7europe.org/fhir/terminology/common/ValueSet/lab-specimenContainer-eu-lab> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "lab-specimenContainer-eu-lab"] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [ fhir:value "2"^^xsd:integer ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "trial-use" ]
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://hl7europe.org/fhir/terminology/common/ValueSet/lab-specimenContainer-eu-lab"] ;
+  fhir:ValueSet.version [ fhir:value "0.4.0"] ;
+  fhir:ValueSet.name [ fhir:value "LabSpecimenContainerEu"] ;
+  fhir:ValueSet.title [ fhir:value "Specimen Container"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-24T21:00:57+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "HL7 Europe"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Europe" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7europe.org" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "List of the containers commonly used to collect specimens (e.g. urine, blood,..)."] ;
+  fhir:ValueSet.copyright [ fhir:value "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702290003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cervical cytology microscopy slide" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706057008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytology specimen container" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706052002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702292006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube, K3EDTA/sodium fluoride" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "767387006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube with citrate and theophylline and adenosine and dipyramidole" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "767384004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube with clot activator" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "767390000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube with heparin lithium and gel separator" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "767382000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube with heparin sodium" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "767660003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube with sodium fluoride" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "767389009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube with tripotassium and ethylene diamine tetraacetic acid and aprotinin" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702279008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube, gel separator" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702293001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube, K2EDTA/aprotinin" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702278000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube, no additive/metal-free" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702280006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube, RNA stabiliser" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702281005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated blood collection tube, thrombin/clot activator/gel separator" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702310001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated saliva specimen container, sodium azide" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706056004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated urine specimen container" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702302002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated urine specimen container, boric acid (H3BO3)" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702288004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated urine specimen container, boric acid (H3BO3)/sodium formate" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702289007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated urine specimen container, ethyl paraben/sodium propionate/chlorhexidine" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702303007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated urine specimen container, multiple preservative" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702308003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Evacuated urine specimen container, no additive" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706047007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fecal specimen container" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706053007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "General specimen container" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702268003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "General specimen container, no additive, non-sterile" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702269006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "General specimen container, no additive, sterile" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "874799005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microbial cryotube" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706050005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microcapillary blood collection tube" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702275002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microcapillary blood collection tube, ammonium heparin" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702276001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microcapillary blood collection tube, K2EDTA" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702277005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microcapillary blood collection tube, no additive" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702304001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microcapillary blood transfer tube, clot activator" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702306004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microcapillary blood transfer tube, EDTA" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702307008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microcapillary blood transfer tube, heparin" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702305000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microcapillary sodium fluoride blood transfer tube" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702224000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Midstream urine specimen container" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706051009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702283008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube with gel separator" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702297000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, clot activator" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702295008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, clot activator/gel separator" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702282003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, EDTA" ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702299002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, K2EDTA" ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702298005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, K3EDTA" ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702284002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, lithium heparin" ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702300005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, lithium heparin/gel separator, non-sterile" ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702285001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, lithium heparin/gel separator, sterile" ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702286000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, NaEDTA/sodium fluoride" ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702256007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, no additive" ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702287009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, potassium oxalate/sodium fluoride" ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702296009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-evacuated blood collection tube, sodium citrate" ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702264001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-sterile urine specimen container" ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702309006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Saliva specimen container, no additive" ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706058003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Secretory specimen container" ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706046003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen receptacle" ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702223006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sputum specimen container" ]
+       ], [
+         fhir:index 55 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702244006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sterile urine specimen container" ]
+       ], [
+         fhir:index 56 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702232008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sweat specimen container" ]
+       ], [
+         fhir:index 57 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702294007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Syringe-blood collection tube transfer" ]
+       ], [
+         fhir:index 58 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706054001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen container" ]
+       ], [
+         fhir:index 59 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "767385003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aerobic blood culture bottle" ]
+       ], [
+         fhir:index 60 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "767383005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anaerobic blood culture bottle" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7europe.org/fhir/terminology/common/ValueSet/lab-specimenContainer-eu-lab.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="lab-speciesType-eu-vs"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7europe.org/fhir/terminology/common/ValueSet/lab-speciesType-eu-vs"/>
+  <version value="0.4.0"/>
+  <name value="LabSpeciesTypesEuVs"/>
+  <title value="Types of species"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-24T21:10:34+00:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7europe.org"/>
+    </telecom>
+  </contact>
+  <description value="Types of animal species for non-human subjects"/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="125097000"/>
+        <display value="Domestic goat"/>
+      </concept>
+      <concept>
+        <code value="125099002"/>
+        <display value="Sheep"/>
+      </concept>
+      <concept>
+        <code value="34618005"/>
+        <display value="Cow"/>
+      </concept>
+      <concept>
+        <code value="425134008"/>
+        <display value="Turkey"/>
+      </concept>
+      <concept>
+        <code value="47290002"/>
+        <display value="Chicken"/>
+      </concept>
+      <concept>
+        <code value="15778005"/>
+        <display value="Anser"/>
+      </concept>
+      <concept>
+        <code value="396620009"/>
+        <display value="Duck"/>
+      </concept>
+      <concept>
+        <code value="35354009"/>
+        <display value="Horse"/>
+      </concept>
+      <concept>
+        <code value="85626006"/>
+        <display value="Donkey"/>
+      </concept>
+      <concept>
+        <code value="132950000"/>
+        <display value="Mule"/>
+      </concept>
+      <concept>
+        <code value="448771007"/>
+        <display value="Domestic dog"/>
+      </concept>
+      <concept>
+        <code value="448169003"/>
+        <display value="Domestic cat"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

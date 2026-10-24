@@ -1,0 +1,20 @@
+{
+  "url" : "http://hl7europe.org/fhir/terminology/common/ImplementationGuide/hl7.eu.terminology.common",
+  "name" : "EUCommon",
+  "title" : "EU Common Terminologies",
+  "description" : "Common Terminologies for HL7 Europe",
+  "status" : "draft",
+  "package-id" : "hl7.eu.terminology.common",
+  "ig-ver" : "0.4.0",
+  "date" : "Sat, 24 Oct, 2026 21:10:34 +0000",
+  "dateISO8601" : "2026-10-24T21:10:34+00:00",
+  "errs" : 31,
+  "warnings" : 74,
+  "hints" : 21666,
+  "broken-links" : 0,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 2870681816
+}

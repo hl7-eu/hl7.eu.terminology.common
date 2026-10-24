@@ -1,0 +1,349 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7europe.org/fhir/terminology/common/ValueSet/lab-technique-eu-lab> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "lab-technique-eu-lab"] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [ fhir:value "2"^^xsd:integer ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "trial-use" ]
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://hl7europe.org/fhir/terminology/common/ValueSet/lab-technique-eu-lab"] ;
+  fhir:ValueSet.version [ fhir:value "0.4.0"] ;
+  fhir:ValueSet.name [ fhir:value "LabTechniqueEuVs"] ;
+  fhir:ValueSet.title [ fhir:value "Laboratory Techniques"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-24T21:10:34+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "HL7 Europe"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Europe" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7europe.org" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Laboratory technique (method of measurement) used for the result measurement (based on SNOMED CT)."] ;
+  fhir:ValueSet.copyright [ fhir:value "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1259932009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Loop-mediated isothermal amplification technique (qualifier value)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1259933004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Strand displacement amplification technique (qualifier value)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1259934005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microparticle enzyme immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1259935006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chemiluminescent immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1259936007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Enzyme-linked fluorescence assay technique (qualifier value)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258035006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "High pressure liquid chromatography (qualifier value)" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258036007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunoblotting (qualifier value)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258037003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunoradiometry (qualifier value)" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258066000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polymerase chain reaction technique (qualifier value)" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258075003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Serotyping (qualifier value)" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258087005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Agar dilution (qualifier value)" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258099003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluorescence microscopy technique (qualifier value)" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264272003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Conductivity technique (qualifier value)" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264275001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluorescence polarization immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264788002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biotyping (qualifier value)" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "278289002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microscopy technique (qualifier value)" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "359838000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nephelometry (qualifier value)" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66691000052100" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Electrochemiluminescence immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66701000052100" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluorescent enzyme immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66711000052103" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Line immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66721000052106" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Recombinant immunoblot assay technique (qualifier value)" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66731000052108" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunochromatographic test technique (qualifier value)" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66741000052102" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chemiluminescent microparticle immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "68431000052104" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Enzyme-linked immunosorbent assay technique (qualifier value)" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702660003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Test strip technique (qualifier value)" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702661004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Light microscopy technique (qualifier value)" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702873001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calculation technique (qualifier value)" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702946003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coagulation technique (qualifier value)" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703444002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluorescent immunoassay (qualifier value)" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703445001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ion selective electrode measurement technique (qualifier value)" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703447009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Enzyme immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703448004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Latex agglutination test technique (qualifier value)" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703449007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radioimmunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703450007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Electrophoresis technique (qualifier value)" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703454003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Centrifugation technique (qualifier value)" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703458000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutralization method (qualifier value)" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703459008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Westergren technique (qualifier value)" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703725008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Culture technique (qualifier value)" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703750006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aerobic culture technique (qualifier value)" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703751005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anaerobic culture technique (qualifier value)" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703752003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Organism specific culture technique (qualifier value)" ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70521000052109" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Affinity chromatography technique (qualifier value)" ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70531000052106" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Agarose gel electrophoresis technique (qualifier value)" ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70541000052100" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chemiluminescence technique (qualifier value)" ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70551000052102" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Enzyme-multiplied immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70561000052104" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gas chromatography technique (qualifier value)" ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70581000052105" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Capillary electrophoresis technique (qualifier value)" ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70591000052107" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pyrosequencing technique (qualifier value)" ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70601000052104" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Real-time polymerase chain reaction technique (qualifier value)" ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70611000052102" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Melting curve technique (qualifier value)" ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70621000052105" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spectrophotometric technique (qualifier value)" ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708058007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Flow cytometry technique (qualifier value)" ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708061008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gram stain technique (qualifier value)" ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708062001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunodiffusion technique (qualifier value)" ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708063006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunoelectrophoresis technique (qualifier value)" ]
+       ], [
+         fhir:index 55 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708064000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunofixation technique (qualifier value)" ]
+       ], [
+         fhir:index 56 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708075001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Potassium hydroxide preparation technique (qualifier value)" ]
+       ], [
+         fhir:index 57 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708097004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunohistochemistry technique (qualifier value)" ]
+       ], [
+         fhir:index 58 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708099001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rapid immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 59 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708104000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Agglutination technique (qualifier value)" ]
+       ], [
+         fhir:index 60 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708131002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anti human globulin test technique, direct (qualifier value)" ]
+       ], [
+         fhir:index 61 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708133004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Complement fixation technique (qualifier value)" ]
+       ], [
+         fhir:index 62 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "726449005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 63 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "726748001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radioallergosorbent testing technique (qualifier value)" ]
+       ], [
+         fhir:index 64 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "767095001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Direct immunofluorescence technique (qualifier value)" ]
+       ], [
+         fhir:index 65 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "767096000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indirect immunofluorescence technique (qualifier value)" ]
+       ], [
+         fhir:index 66 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83561000052101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Photometry technique (qualifier value)" ]
+       ], [
+         fhir:index 67 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83581000052107" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Matrix assisted laser desorption ionization time of flight mass spectrometry technique (qualifier value)" ]
+       ], [
+         fhir:index 68 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83591000052109" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Particle-enhanced turbidimetric immunoassay technique (qualifier value)" ]
+       ], [
+         fhir:index 69 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83601000052101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Potentiometry technique (qualifier value)" ]
+       ], [
+         fhir:index 70 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83611000052104" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Turbidimetry technique (qualifier value)" ]
+       ], [
+         fhir:index 71 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1304095001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refractometry (qualifier value)" ]
+       ], [
+         fhir:index 72 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1304230000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Viscometry (qualifier value)" ]
+       ], [
+         fhir:index 73 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1304094002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "X-ray diffraction (qualifier value)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7europe.org/fhir/terminology/common/ValueSet/lab-technique-eu-lab.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

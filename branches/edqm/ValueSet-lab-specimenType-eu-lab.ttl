@@ -1,0 +1,1861 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7europe.org/fhir/terminology/common/ValueSet/lab-specimenType-eu-lab> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "lab-specimenType-eu-lab"] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [ fhir:value "2"^^xsd:integer ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "trial-use" ]
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://hl7europe.org/fhir/terminology/common/ValueSet/lab-specimenType-eu-lab"] ;
+  fhir:ValueSet.version [ fhir:value "0.4.0"] ;
+  fhir:ValueSet.name [ fhir:value "LabSpecimenTypesEuVs"] ;
+  fhir:ValueSet.title [ fhir:value "Specimen Types"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-24T21:00:57+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "HL7 Europe"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Europe" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7europe.org" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Laboratory Specimen Types"] ;
+  fhir:ValueSet.copyright [ fhir:value "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258497007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abscess swab" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258407001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abscess tissue" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119373006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amniotic fluid specimen" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122552005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arterial blood specimen" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309201001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ascitic fluid specimen" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119341000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bile specimen" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258493006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bladder stone specimen" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258582006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood clot specimen" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119297000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood specimen" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309051001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Body fluid specimen" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "432825001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Body secretion specimen" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258583001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bone marrow clot specimen" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119359002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bone marrow specimen" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258417006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bone tissue specimen" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309176002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bronchial brushings specimen" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258446004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bronchial fluid specimen" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258564008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Buccal smear specimen" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258418001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn tissue" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258448003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bursa fluid specimen" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309110000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bursa tissue specimen" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119350003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calculus specimen" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258627009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cannula tip submitted as specimen" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122554006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Capillary blood specimen" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309101008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cartilage specimen" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119312009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Catheter tip submitted as specimen" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258450006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerebrospinal fluid specimen" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122580007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerumen specimen" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258452003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chylous fluid specimen" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258581004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Clotted blood specimen" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "168136008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colostomy fluid specimen" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119329007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colostrum specimen" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258498002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Conjunctival swab" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122556008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cord blood specimen" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258499005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cough swab" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258419009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Curettings" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258453008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cyst fluid specimen" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258420003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cyst tissue" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119338009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dentin specimen" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472919007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Device submitted as specimen" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258454002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dialysate specimen" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258439008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharge specimen" ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258566005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deoxyribonucleic acid specimen" ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1003705007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drain tip submitted as specimen" ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258455001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drainage fluid specimen" ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119294007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dried blood specimen" ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258440005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Effusion specimen" ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258456000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Empyema fluid specimen" ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119336008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exhaled air specimen" ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258470000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prostatic fluid specimen" ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258441009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exudate specimen" ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309128003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eye fluid specimen" ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258487003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fecal smear" ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119339001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stool specimen" ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309117002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fascia specimen" ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258458004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fistula fluid specimen" ]
+       ], [
+         fhir:index 55 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258442002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluid specimen" ]
+       ], [
+         fhir:index 56 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "445744006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluid specimen from seroma" ]
+       ], [
+         fhir:index 57 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309502007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fetus specimen" ]
+       ], [
+         fhir:index 58 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "447103002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Foreign body submitted as specimen" ]
+       ], [
+         fhir:index 59 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258492001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gallstone specimen" ]
+       ], [
+         fhir:index 60 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "432657002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ganglion cyst specimen" ]
+       ], [
+         fhir:index 61 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309213006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastric brushings specimen" ]
+       ], [
+         fhir:index 62 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309199003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastrointestinal fluid specimen" ]
+       ], [
+         fhir:index 63 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258562007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Genetic specimen" ]
+       ], [
+         fhir:index 64 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258508008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Genital swab" ]
+       ], [
+         fhir:index 65 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258559009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gingivocrevicular fluid specimen" ]
+       ], [
+         fhir:index 66 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "440493002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Graft specimen from patient" ]
+       ], [
+         fhir:index 67 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258588005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematoma specimen" ]
+       ], [
+         fhir:index 68 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119326000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hair specimen" ]
+       ], [
+         fhir:index 69 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258424007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heart valve tissue" ]
+       ], [
+         fhir:index 70 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258521001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "High vaginal swab" ]
+       ], [
+         fhir:index 71 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258461003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hydrocele fluid specimen" ]
+       ], [
+         fhir:index 72 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258462005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ileostomy fluid specimen" ]
+       ], [
+         fhir:index 73 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258479004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Interstitial fluid specimen" ]
+       ], [
+         fhir:index 74 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309114009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ligament specimen" ]
+       ], [
+         fhir:index 75 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258522008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Low vaginal swab" ]
+       ], [
+         fhir:index 76 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309171007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lower respiratory fluid specimen" ]
+       ], [
+         fhir:index 77 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "302795002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymph node aspirate" ]
+       ], [
+         fhir:index 78 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258488008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymph node smear" ]
+       ], [
+         fhir:index 79 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309078004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymph node tissue specimen" ]
+       ], [
+         fhir:index 80 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119340004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Meconium specimen" ]
+       ], [
+         fhir:index 81 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119345009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Menstrual blood specimen" ]
+       ], [
+         fhir:index 82 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119303007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Microbial isolate" ]
+       ], [
+         fhir:index 83 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119328004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mother's milk specimen" ]
+       ], [
+         fhir:index 84 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258483004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mucus specimen" ]
+       ], [
+         fhir:index 85 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119327009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nail specimen" ]
+       ], [
+         fhir:index 86 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "168141000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal fluid specimen" ]
+       ], [
+         fhir:index 87 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258467004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasopharyngeal washings" ]
+       ], [
+         fhir:index 88 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "433799002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nerve ganglion specimen" ]
+       ], [
+         fhir:index 89 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309129006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nerve tissue specimen" ]
+       ], [
+         fhir:index 90 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309131002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neuroma specimen" ]
+       ], [
+         fhir:index 91 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258468009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Edema fluid specimen" ]
+       ], [
+         fhir:index 92 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309210009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Esophageal brushings specimen" ]
+       ], [
+         fhir:index 93 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258494000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pancreatic stone specimen" ]
+       ], [
+         fhir:index 94 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122571007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pericardial fluid specimen" ]
+       ], [
+         fhir:index 95 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "168139001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peritoneal fluid specimen" ]
+       ], [
+         fhir:index 96 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258469001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pharyngeal washings" ]
+       ], [
+         fhir:index 97 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119361006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma specimen" ]
+       ], [
+         fhir:index 98 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "110913002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pleural cytologic material" ]
+       ], [
+         fhir:index 99 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "418564007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pleural fluid specimen" ]
+       ], [
+         fhir:index 100 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258484005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Postmortem tissue specimen" ]
+       ], [
+         fhir:index 101 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258428005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Products of conception tissue specimen" ]
+       ], [
+         fhir:index 102 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119323008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pus specimen" ]
+       ], [
+         fhir:index 103 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258502009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pus swab" ]
+       ], [
+         fhir:index 104 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119351004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte specimen" ]
+       ], [
+         fhir:index 105 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258495004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Renal stone specimen" ]
+       ], [
+         fhir:index 106 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119342007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Saliva specimen" ]
+       ], [
+         fhir:index 107 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258431006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Scrapings" ]
+       ], [
+         fhir:index 108 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258432004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sebum specimen" ]
+       ], [
+         fhir:index 109 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119347001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Seminal fluid specimen" ]
+       ], [
+         fhir:index 110 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119364003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Serum specimen" ]
+       ], [
+         fhir:index 111 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309261004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sigmoid colon brushings specimen" ]
+       ], [
+         fhir:index 112 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258475005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sinus washings" ]
+       ], [
+         fhir:index 113 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119331003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skeletal muscle specimen" ]
+       ], [
+         fhir:index 114 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119325001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tissue specimen from skin" ]
+       ], [
+         fhir:index 115 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258505006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skin ulcer swab" ]
+       ], [
+         fhir:index 116 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258433009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smear specimen" ]
+       ], [
+         fhir:index 117 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309072003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Soft tissue specimen" ]
+       ], [
+         fhir:index 118 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119300005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from blood product" ]
+       ], [
+         fhir:index 119 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "898201001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from device" ]
+       ], [
+         fhir:index 120 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1003706008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from drain tip" ]
+       ], [
+         fhir:index 121 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119305000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from plasma bag" ]
+       ], [
+         fhir:index 122 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119349003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spermatozoa specimen" ]
+       ], [
+         fhir:index 123 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258434003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spun urinary sediment" ]
+       ], [
+         fhir:index 124 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119334006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sputum specimen" ]
+       ], [
+         fhir:index 125 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "257261003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab" ]
+       ], [
+         fhir:index 126 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "445160003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab of eye" ]
+       ], [
+         fhir:index 127 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122569007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sweat specimen" ]
+       ], [
+         fhir:index 128 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119332005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Synovial fluid specimen" ]
+       ], [
+         fhir:index 129 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309123007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Synovial specimen" ]
+       ], [
+         fhir:index 130 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309121009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Synovial tissue specimen" ]
+       ], [
+         fhir:index 131 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "440468004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tampon submitted as specimen" ]
+       ], [
+         fhir:index 132 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258465007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lacrimal fluid specimen" ]
+       ], [
+         fhir:index 133 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122594008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tears specimen" ]
+       ], [
+         fhir:index 134 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309481000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Temporal artery specimen" ]
+       ], [
+         fhir:index 135 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309107007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tendon specimen" ]
+       ], [
+         fhir:index 136 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258529004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Throat swab" ]
+       ], [
+         fhir:index 137 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119376003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tissue specimen" ]
+       ], [
+         fhir:index 138 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258538002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transudate specimen" ]
+       ], [
+         fhir:index 139 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258435002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tumor tissue specimen" ]
+       ], [
+         fhir:index 140 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "441479001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fresh tissue specimen" ]
+       ], [
+         fhir:index 141 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "439628000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urinary collection bag submitted as specimen" ]
+       ], [
+         fhir:index 142 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "439580004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine collection pad submitted as specimen" ]
+       ], [
+         fhir:index 143 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122567009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine sediment specimen" ]
+       ], [
+         fhir:index 144 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122575003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen" ]
+       ], [
+         fhir:index 145 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258437005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vegetation from heart valve" ]
+       ], [
+         fhir:index 146 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122555007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Venous blood specimen" ]
+       ], [
+         fhir:index 147 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122572000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vomitus specimen" ]
+       ], [
+         fhir:index 148 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258591005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "White blood cell specimen" ]
+       ], [
+         fhir:index 149 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258580003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Whole blood specimen" ]
+       ], [
+         fhir:index 150 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "438805006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Whole tooth specimen" ]
+       ], [
+         fhir:index 151 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122566000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluid specimen from wound" ]
+       ], [
+         fhir:index 152 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258531008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wound swab" ]
+       ], [
+         fhir:index 153 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446302006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Air specimen" ]
+       ], [
+         fhir:index 154 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33631000087102" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allogeneic bone graft material submitted as specimen" ]
+       ], [
+         fhir:index 155 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703430008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arterial cord blood specimen" ]
+       ], [
+         fhir:index 156 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16215211000119100" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bartholin's gland fluid specimen" ]
+       ], [
+         fhir:index 157 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446129006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bile specimen from common bile duct" ]
+       ], [
+         fhir:index 158 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446817004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bile specimen from gallbladder" ]
+       ], [
+         fhir:index 159 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258490009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biliary stone specimen" ]
+       ], [
+         fhir:index 160 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309105004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bone biopsy specimen" ]
+       ], [
+         fhir:index 161 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258607008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bronchoalveolar lavage fluid specimen" ]
+       ], [
+         fhir:index 162 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122577006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cervical mucus specimen" ]
+       ], [
+         fhir:index 163 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16216411000119106" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Conjunctival smear specimen" ]
+       ], [
+         fhir:index 164 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1003707004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drain device submitted as specimen" ]
+       ], [
+         fhir:index 165 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309216003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Duodenal biopsy specimen" ]
+       ], [
+         fhir:index 166 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122574004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Duodenal fluid specimen" ]
+       ], [
+         fhir:index 167 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309166000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ear swab specimen" ]
+       ], [
+         fhir:index 168 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119314005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Electrode submitted as specimen" ]
+       ], [
+         fhir:index 169 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "419695002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Environmental swab" ]
+       ], [
+         fhir:index 170 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309211008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastric biopsy specimen" ]
+       ], [
+         fhir:index 171 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122573005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastric contents specimen" ]
+       ], [
+         fhir:index 172 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258459007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastric fluid specimen" ]
+       ], [
+         fhir:index 173 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122579009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Genital lochia specimen" ]
+       ], [
+         fhir:index 174 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258512002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glans penis swab" ]
+       ], [
+         fhir:index 175 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "473415003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrauterine contraceptive device submitted as specimen" ]
+       ], [
+         fhir:index 176 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258649003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intravenous infusion fluid specimen" ]
+       ], [
+         fhir:index 177 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309049000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lesion specimen" ]
+       ], [
+         fhir:index 178 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309203003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Liver biopsy specimen" ]
+       ], [
+         fhir:index 179 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258589002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymph node specimen" ]
+       ], [
+         fhir:index 180 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258466008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Middle ear fluid specimen" ]
+       ], [
+         fhir:index 181 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119298005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mixed venous blood specimen" ]
+       ], [
+         fhir:index 182 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "705054005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Muscle specimen" ]
+       ], [
+         fhir:index 183 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309104000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Musculoskeletal specimen" ]
+       ], [
+         fhir:index 184 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "447339001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal smear specimen" ]
+       ], [
+         fhir:index 185 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258500001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasopharyngeal swab" ]
+       ], [
+         fhir:index 186 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16220931000119104" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pancreas cyst fluid specimen" ]
+       ], [
+         fhir:index 187 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119343002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pancreatic fluid specimen" ]
+       ], [
+         fhir:index 188 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309154006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pituitary specimen" ]
+       ], [
+         fhir:index 189 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708317005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pooled specimen from vaginal introitus and rectal swab" ]
+       ], [
+         fhir:index 190 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258513007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prepuce swab" ]
+       ], [
+         fhir:index 191 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258528007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rectal swab" ]
+       ], [
+         fhir:index 192 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "410580001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Respiratory fluid specimen" ]
+       ], [
+         fhir:index 193 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "732293002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Salivary calculus specimen" ]
+       ], [
+         fhir:index 194 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309066003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skin biopsy specimen" ]
+       ], [
+         fhir:index 195 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "430268003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from bone" ]
+       ], [
+         fhir:index 196 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119398007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from brain" ]
+       ], [
+         fhir:index 197 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122601001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from breast obtained by biopsy" ]
+       ], [
+         fhir:index 198 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119307008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from endotracheal tube" ]
+       ], [
+         fhir:index 199 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119399004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from eye" ]
+       ], [
+         fhir:index 200 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "127476006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from fallopian tube" ]
+       ], [
+         fhir:index 201 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446951004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from granulation tissue" ]
+       ], [
+         fhir:index 202 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "127473003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from kidney" ]
+       ], [
+         fhir:index 203 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119383005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from liver" ]
+       ], [
+         fhir:index 204 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122610009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from lung obtained by biopsy" ]
+       ], [
+         fhir:index 205 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "447407009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from necrotic tissue" ]
+       ], [
+         fhir:index 206 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "127469001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from pancreas" ]
+       ], [
+         fhir:index 207 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119403008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from placenta" ]
+       ], [
+         fhir:index 208 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1003711005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from prosthetic joint" ]
+       ], [
+         fhir:index 209 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "608969007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from skin" ]
+       ], [
+         fhir:index 210 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "433308004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from spleen" ]
+       ], [
+         fhir:index 211 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119379005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from stomach" ]
+       ], [
+         fhir:index 212 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "445447003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from trachea obtained by aspiration" ]
+       ], [
+         fhir:index 213 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "441903006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen obtained by bronchial aspiration" ]
+       ], [
+         fhir:index 214 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "440674008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen obtained by lavage" ]
+       ], [
+         fhir:index 215 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57711000052109" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen obtained by puncture procedure" ]
+       ], [
+         fhir:index 216 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16220971000119101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen of fluid from cyst of kidney" ]
+       ], [
+         fhir:index 217 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "278020009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spot urine specimen" ]
+       ], [
+         fhir:index 218 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "271514008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sternal bone marrow specimen" ]
+       ], [
+         fhir:index 219 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472894002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from cornea" ]
+       ], [
+         fhir:index 220 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472900002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from gingiva" ]
+       ], [
+         fhir:index 221 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472888005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from larynx" ]
+       ], [
+         fhir:index 222 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16210971000119108" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from lesion" ]
+       ], [
+         fhir:index 223 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472862007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from lesion of skin" ]
+       ], [
+         fhir:index 224 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472879001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from placenta" ]
+       ], [
+         fhir:index 225 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472885008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from pressure injury" ]
+       ], [
+         fhir:index 226 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472883001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from surgical wound" ]
+       ], [
+         fhir:index 227 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472866005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from tongue" ]
+       ], [
+         fhir:index 228 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472867001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from tonsil" ]
+       ], [
+         fhir:index 229 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "461911000124106" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oropharyngeal swab" ]
+       ], [
+         fhir:index 230 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309478005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thrombus specimen" ]
+       ], [
+         fhir:index 231 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258480001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transtracheal aspirate specimen" ]
+       ], [
+         fhir:index 232 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258436001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Umbilical cord tissue specimen" ]
+       ], [
+         fhir:index 233 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258530009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urethral swab" ]
+       ], [
+         fhir:index 234 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "444937002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen from ureter" ]
+       ], [
+         fhir:index 235 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "447589008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen obtained by single catheterization of bladder" ]
+       ], [
+         fhir:index 236 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446907008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen obtained from kidney" ]
+       ], [
+         fhir:index 237 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258520000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaginal swab" ]
+       ], [
+         fhir:index 238 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703431007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Venous cord blood specimen" ]
+       ], [
+         fhir:index 239 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258482009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vesicle fluid specimen" ]
+       ], [
+         fhir:index 240 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258523003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vulval swab" ]
+       ], [
+         fhir:index 241 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258662004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adhesive slide specimen" ]
+       ], [
+         fhir:index 242 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258527002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anal swab" ]
+       ], [
+         fhir:index 243 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258415003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biopsy specimen" ]
+       ], [
+         fhir:index 244 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "303248007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood film specimen" ]
+       ], [
+         fhir:index 245 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "737535000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood smear specimen" ]
+       ], [
+         fhir:index 246 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122560006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood specimen from blood donor" ]
+       ], [
+         fhir:index 247 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "866033003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood specimen in aerobic blood culture bottle" ]
+       ], [
+         fhir:index 248 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "866032008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood specimen in anaerobic blood culture bottle" ]
+       ], [
+         fhir:index 249 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "878861003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood specimen in blood culture bottle" ]
+       ], [
+         fhir:index 250 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "445295009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood specimen with EDTA" ]
+       ], [
+         fhir:index 251 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309061008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Breast fine needle aspirate specimen" ]
+       ], [
+         fhir:index 252 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309503002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Breast nipple discharge specimen" ]
+       ], [
+         fhir:index 253 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309174004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bronchial biopsy specimen" ]
+       ], [
+         fhir:index 254 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119308003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cannula submitted as specimen" ]
+       ], [
+         fhir:index 255 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "473409003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Central venous catheter submitted as specimen" ]
+       ], [
+         fhir:index 256 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472929000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Central venous catheter tip submitted as specimen" ]
+       ], [
+         fhir:index 257 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "445372002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerebrospinal fluid specimen from ventricle of brain" ]
+       ], [
+         fhir:index 258 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258524009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cervical swab" ]
+       ], [
+         fhir:index 259 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "440473005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Contact lens submitted as specimen" ]
+       ], [
+         fhir:index 260 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "440500007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dried blood spot specimen" ]
+       ], [
+         fhir:index 261 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119319000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drug specimen" ]
+       ], [
+         fhir:index 262 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309165001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ear specimen" ]
+       ], [
+         fhir:index 263 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258575007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Early morning urine specimen" ]
+       ], [
+         fhir:index 264 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446676001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Expressed breast milk specimen" ]
+       ], [
+         fhir:index 265 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122568004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exudate specimen from wound" ]
+       ], [
+         fhir:index 266 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258519006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Female genital swab" ]
+       ], [
+         fhir:index 267 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "737357006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fetal blood specimen" ]
+       ], [
+         fhir:index 268 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "698276005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First stream urine specimen" ]
+       ], [
+         fhir:index 269 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "733056005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluid specimen from ear" ]
+       ], [
+         fhir:index 270 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "732976006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluid specimen from external auditory canal" ]
+       ], [
+         fhir:index 271 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16214171000119101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Genital fluid specimen" ]
+       ], [
+         fhir:index 272 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258570002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Genitourinary specimen" ]
+       ], [
+         fhir:index 273 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309124001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Joint biopsy specimen" ]
+       ], [
+         fhir:index 274 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "431361003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Joint fluid specimen" ]
+       ], [
+         fhir:index 275 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309079007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymph node biopsy specimen" ]
+       ], [
+         fhir:index 276 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309052008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Male genital specimen" ]
+       ], [
+         fhir:index 277 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258574006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mid-stream urine specimen" ]
+       ], [
+         fhir:index 278 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119321005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Milk specimen" ]
+       ], [
+         fhir:index 279 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119377007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myocardial specimen" ]
+       ], [
+         fhir:index 280 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16224371000119105" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal lavage fluid specimen" ]
+       ], [
+         fhir:index 281 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16223051000119101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal sinus contents specimen" ]
+       ], [
+         fhir:index 282 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258411007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasopharyngeal aspirate" ]
+       ], [
+         fhir:index 283 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "441620008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral fluid specimen" ]
+       ], [
+         fhir:index 284 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "418932006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral swab" ]
+       ], [
+         fhir:index 285 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258511009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Penile urethral swab" ]
+       ], [
+         fhir:index 286 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258510005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Penis swab" ]
+       ], [
+         fhir:index 287 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258526006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perianal swab" ]
+       ], [
+         fhir:index 288 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258525005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perineal swab" ]
+       ], [
+         fhir:index 289 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472923004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peripheral vascular catheter tip submitted as specimen" ]
+       ], [
+         fhir:index 290 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "168140004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peritoneal dialysate specimen" ]
+       ], [
+         fhir:index 291 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "788707000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma specimen or serum specimen or whole blood specimen" ]
+       ], [
+         fhir:index 292 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708049000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasma specimen with ethylenediamine tetraacetic acid" ]
+       ], [
+         fhir:index 293 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309172000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pleura biopsy specimen" ]
+       ], [
+         fhir:index 294 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258471001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prostatic massage fluid specimen" ]
+       ], [
+         fhir:index 295 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708112008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Retrouterine pouch fluid aspirate" ]
+       ], [
+         fhir:index 296 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258664003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Scotch tape slide specimen" ]
+       ], [
+         fhir:index 297 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119348006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Seminal plasma specimen" ]
+       ], [
+         fhir:index 298 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122589008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Serum specimen from blood donor" ]
+       ], [
+         fhir:index 299 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122590004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Serum specimen from patient" ]
+       ], [
+         fhir:index 300 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258549008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skin scale specimen" ]
+       ], [
+         fhir:index 301 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258503004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skin swab" ]
+       ], [
+         fhir:index 302 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1179252003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Slide submitted as specimen" ]
+       ], [
+         fhir:index 303 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119371008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from abscess" ]
+       ], [
+         fhir:index 304 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446972001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from abscess obtained by aspiration" ]
+       ], [
+         fhir:index 305 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119392008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from anus" ]
+       ], [
+         fhir:index 306 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "127456000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from breast" ]
+       ], [
+         fhir:index 307 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16211051000119109" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from deep wound" ]
+       ], [
+         fhir:index 308 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119396006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from endometrium" ]
+       ], [
+         fhir:index 309 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "440229008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from environment" ]
+       ], [
+         fhir:index 310 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16212771000119105" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from eyelid obtained by biopsy" ]
+       ], [
+         fhir:index 311 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "449446003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from gallbladder" ]
+       ], [
+         fhir:index 312 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119344008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from genital system" ]
+       ], [
+         fhir:index 313 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "447098004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from nail obtained by scraping" ]
+       ], [
+         fhir:index 314 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "430248009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from nasopharyngeal structure" ]
+       ], [
+         fhir:index 315 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "447154002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from nose" ]
+       ], [
+         fhir:index 316 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119397002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from penis" ]
+       ], [
+         fhir:index 317 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "434250007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from pericardium obtained by biopsy" ]
+       ], [
+         fhir:index 318 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "438660002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from prosthetic device" ]
+       ], [
+         fhir:index 319 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446952006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from skin obtained by scraping" ]
+       ], [
+         fhir:index 320 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119295008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen obtained by aspiration" ]
+       ], [
+         fhir:index 321 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119324002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen of unknown material" ]
+       ], [
+         fhir:index 322 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703691002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spun cerebrospinal fluid" ]
+       ], [
+         fhir:index 323 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258609006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sputum specimen obtained by aspiration from trachea" ]
+       ], [
+         fhir:index 324 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "447488002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suprapubic urine specimen" ]
+       ], [
+         fhir:index 325 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "373826004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Surgical excision specimen" ]
+       ], [
+         fhir:index 326 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472896000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from blister" ]
+       ], [
+         fhir:index 327 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "733104004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from buccal mucosa" ]
+       ], [
+         fhir:index 328 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472884007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from deep wound" ]
+       ], [
+         fhir:index 329 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472886009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from gastrostomy stoma" ]
+       ], [
+         fhir:index 330 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472901003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from nasal sinus" ]
+       ], [
+         fhir:index 331 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472881004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from pharynx" ]
+       ], [
+         fhir:index 332 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472882006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from superficial wound" ]
+       ], [
+         fhir:index 333 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33901000087104" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from tracheostomy stoma" ]
+       ], [
+         fhir:index 334 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472871003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from ulcer" ]
+       ], [
+         fhir:index 335 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "445364004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab of axilla" ]
+       ], [
+         fhir:index 336 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "445444005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab of groin" ]
+       ], [
+         fhir:index 337 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "445367006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab of umbilicus" ]
+       ], [
+         fhir:index 338 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "710069003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tick specimen" ]
+       ], [
+         fhir:index 339 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "128157004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tissue specimen from brain" ]
+       ], [
+         fhir:index 340 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "399492000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tissue specimen from lung" ]
+       ], [
+         fhir:index 341 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "699874006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tissue specimen from pericardium" ]
+       ], [
+         fhir:index 342 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57741000052105" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tracheal secretion specimen" ]
+       ], [
+         fhir:index 343 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472938003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tracheal tube submitted as specimen" ]
+       ], [
+         fhir:index 344 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122877000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Upper respiratory fluid specimen obtained by tracheal aspiration" ]
+       ], [
+         fhir:index 345 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258604001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Upper respiratory specimen" ]
+       ], [
+         fhir:index 346 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122565001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urinary catheter specimen" ]
+       ], [
+         fhir:index 347 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446130001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen from bladder" ]
+       ], [
+         fhir:index 348 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "442173007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen from nephrostomy tube" ]
+       ], [
+         fhir:index 349 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446306009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen obtained from urinary collection bag" ]
+       ], [
+         fhir:index 350 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446846006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen obtained via indwelling urinary catheter" ]
+       ], [
+         fhir:index 351 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16221251000119108" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen obtained via straight catheter" ]
+       ], [
+         fhir:index 352 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258577004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaginal secretion specimen" ]
+       ], [
+         fhir:index 353 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472932002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vascular catheter submitted as specimen" ]
+       ], [
+         fhir:index 354 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "703432000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Venous plasma specimen" ]
+       ], [
+         fhir:index 355 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472942000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventriculoperitoneal shunt submitted as specimen" ]
+       ], [
+         fhir:index 356 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258438000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vitreous humor specimen" ]
+       ], [
+         fhir:index 357 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119318008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Water specimen" ]
+       ], [
+         fhir:index 358 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57921000052103" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Whole blood specimen with edetic acid" ]
+       ], [
+         fhir:index 359 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258565009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chorionic villi specimen" ]
+       ], [
+         fhir:index 360 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258599007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Contact lens solution specimen" ]
+       ], [
+         fhir:index 361 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "439961009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Implant submitted as specimen" ]
+       ], [
+         fhir:index 362 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258603007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from respiratory system" ]
+       ], [
+         fhir:index 363 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119368000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from cyst" ]
+       ], [
+         fhir:index 364 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "433861002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from nasal sinus obtained by fine needle aspiration biopsy" ]
+       ], [
+         fhir:index 365 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "734379005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from periodontal tissue" ]
+       ], [
+         fhir:index 366 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119369008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from ulcer" ]
+       ], [
+         fhir:index 367 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "430304001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from unspecified body site" ]
+       ], [
+         fhir:index 368 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "127479004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from uterus" ]
+       ], [
+         fhir:index 369 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122550002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen obtained by fine needle aspiration procedure" ]
+       ], [
+         fhir:index 370 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258576008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suprapubic aspirate specimen" ]
+       ], [
+         fhir:index 371 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "445297001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab of internal nose" ]
+       ], [
+         fhir:index 372 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "699287008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urine specimen obtained via suprapubic indwelling urinary catheter" ]
+       ], [
+         fhir:index 373 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "444946008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dialysis fluid specimen obtained before dialysis" ]
+       ], [
+         fhir:index 374 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122592007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Serum or plasma specimen" ]
+       ], [
+         fhir:index 375 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309141004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adrenal gland specimen" ]
+       ], [
+         fhir:index 376 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309479002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Artery specimen" ]
+       ], [
+         fhir:index 377 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122558009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood specimen from blood product" ]
+       ], [
+         fhir:index 378 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122559001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood specimen from control" ]
+       ], [
+         fhir:index 379 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122562003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood specimen from newborn" ]
+       ], [
+         fhir:index 380 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258587000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Buffy coat" ]
+       ], [
+         fhir:index 381 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "433116003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from liver obtained by fine needle aspiration biopsy" ]
+       ], [
+         fhir:index 382 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119346005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Egg yolk specimen" ]
+       ], [
+         fhir:index 383 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122582004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte specimen from blood product" ]
+       ], [
+         fhir:index 384 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119333000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fibroblast specimen" ]
+       ], [
+         fhir:index 385 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119320006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Food specimen" ]
+       ], [
+         fhir:index 386 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122576002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Genital mucus specimen" ]
+       ], [
+         fhir:index 387 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119337004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inhaled gas specimen" ]
+       ], [
+         fhir:index 388 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258606004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lower respiratory tract specimen" ]
+       ], [
+         fhir:index 389 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119316007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-biological fluid specimen" ]
+       ], [
+         fhir:index 390 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122551003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peripheral blood specimen" ]
+       ], [
+         fhir:index 391 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119301009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plant specimen" ]
+       ], [
+         fhir:index 392 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119362004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet poor plasma specimen" ]
+       ], [
+         fhir:index 393 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119363009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet rich plasma specimen" ]
+       ], [
+         fhir:index 394 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119358005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet specimen" ]
+       ], [
+         fhir:index 395 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "725946000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reticulocyte specimen" ]
+       ], [
+         fhir:index 396 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309508006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Soft tissue lesion fine needle aspirate specimen" ]
+       ], [
+         fhir:index 397 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119391001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from bronchus" ]
+       ], [
+         fhir:index 398 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119367005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from burn injury" ]
+       ], [
+         fhir:index 399 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "702701006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from cervix or vagina" ]
+       ], [
+         fhir:index 400 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119400006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from cornea" ]
+       ], [
+         fhir:index 401 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1003708009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from drain device" ]
+       ], [
+         fhir:index 402 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "127462005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from heart" ]
+       ], [
+         fhir:index 403 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "127458004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from lung" ]
+       ], [
+         fhir:index 404 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122614000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from lung obtained by fine needle aspiration procedure" ]
+       ], [
+         fhir:index 405 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "432382007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from lymph node obtained by fine needle aspiration biopsy" ]
+       ], [
+         fhir:index 406 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "128155007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from ovary" ]
+       ], [
+         fhir:index 407 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "431406009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from pancreas obtained by fine needle aspiration biopsy" ]
+       ], [
+         fhir:index 408 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "441695007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from parotid gland obtained by fine needle aspiration biopsy" ]
+       ], [
+         fhir:index 409 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "430250001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from peritoneum" ]
+       ], [
+         fhir:index 410 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "127459007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from pleura" ]
+       ], [
+         fhir:index 411 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119386002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from prostate" ]
+       ], [
+         fhir:index 412 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "384819001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from prostate obtained by needle biopsy" ]
+       ], [
+         fhir:index 413 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "434406008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from salivary gland obtained by fine needle aspiration biopsy" ]
+       ], [
+         fhir:index 414 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "441810001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from soft tissue obtained by fine needle aspiration biopsy" ]
+       ], [
+         fhir:index 415 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "441749007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from submandibular gland obtained by fine needle aspiration biopsy" ]
+       ], [
+         fhir:index 416 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "128154006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from testis" ]
+       ], [
+         fhir:index 417 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119389009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from throat" ]
+       ], [
+         fhir:index 418 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "399680007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from thyroid" ]
+       ], [
+         fhir:index 419 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119390000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from trachea" ]
+       ], [
+         fhir:index 420 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "399411006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from trophoblast" ]
+       ], [
+         fhir:index 421 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119393003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from urethra" ]
+       ], [
+         fhir:index 422 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "450872001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from urinary bladder" ]
+       ], [
+         fhir:index 423 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119395005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from uterine cervix" ]
+       ], [
+         fhir:index 424 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119394009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from vagina" ]
+       ], [
+         fhir:index 425 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119365002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from wound" ]
+       ], [
+         fhir:index 426 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309146009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thyroid fine needle aspirate specimen" ]
+       ], [
+         fhir:index 427 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122638001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tissue specimen from small intestine" ]
+       ], [
+         fhir:index 428 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258444001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aqueous humor specimen" ]
+       ], [
+         fhir:index 429 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258485006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Corneal scraping specimen" ]
+       ], [
+         fhir:index 430 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "168137004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastric aspirate specimen" ]
+       ], [
+         fhir:index 431 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1259931002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hair of face specimen" ]
+       ], [
+         fhir:index 432 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "168145009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymph specimen" ]
+       ], [
+         fhir:index 433 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309507001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Muscle biopsy specimen" ]
+       ], [
+         fhir:index 434 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16224171000119108" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasotracheal aspirate" ]
+       ], [
+         fhir:index 435 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309068002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skin lesion specimen" ]
+       ], [
+         fhir:index 436 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "396997002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from bone marrow obtained by aspiration" ]
+       ], [
+         fhir:index 437 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16215771000119101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from inguinal lymph node obtained by fine needle aspiration biopsy" ]
+       ], [
+         fhir:index 438 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "430236006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from nerve" ]
+       ], [
+         fhir:index 439 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472898004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from hand" ]
+       ], [
+         fhir:index 440 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "472868006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab from peritoneal cavity structure" ]
+       ], [
+         fhir:index 441 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "444787003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swab of endocervix" ]
+       ], [
+         fhir:index 442 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16223971000119109" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Synovial fluid specimen obtained by fine needle aspiration procedure" ]
+       ], [
+         fhir:index 443 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122656001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tissue specimen from gallbladder" ]
+       ], [
+         fhir:index 444 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122736005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tissue specimen from placenta" ]
+       ], [
+         fhir:index 445 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "369611008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tissue specimen obtained from small intestine by biopsy" ]
+       ], [
+         fhir:index 446 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309191000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tonsil biopsy specimen" ]
+       ], [
+         fhir:index 447 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "697989009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anterior nares swab" ]
+       ], [
+         fhir:index 448 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57931000052101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Combined cervical mucus and urine specimen" ]
+       ], [
+         fhir:index 449 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "433324003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from eye region" ]
+       ], [
+         fhir:index 450 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16216171000119108" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen from liver obtained by aspiration" ]
+       ], [
+         fhir:index 451 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16221491000119104" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Voided urine specimen" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7europe.org/fhir/terminology/common/ValueSet/lab-specimenType-eu-lab.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "lab-obsCode-npu-eu-lab",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 2
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "http://hl7europe.org/fhir/terminology/common/ValueSet/lab-obsCode-npu-eu-lab",
+  "version" : "0.4.0",
+  "name" : "NpuVs",
+  "title" : "Laboratory Code: NPU",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-24T21:00:57+00:00",
+  "publisher" : "HL7 Europe",
+  "contact" : [{
+    "name" : "HL7 Europe",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7europe.org"
+    }]
+  }],
+  "description" : "Laboratory observation codes based on the NPU code system.",
+  "copyright" : "This material contains content from NPU Terminology (http://npu-terminology.org). NPU is copyright International Federation of Clinical Chemistry (IFCC) and International Union of Pure and Applied Chemistry (IUPAC) and is available at no cost under the license at https://www.labterm.dk/.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://npu-terminology.org"
+    }]
+  }
+}

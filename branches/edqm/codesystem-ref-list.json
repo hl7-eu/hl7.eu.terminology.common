@@ -1,0 +1,51 @@
+{
+  "codeSystems" : [{
+    "url" : "http://loinc.org",
+    "version" : "2.82",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : null,
+    "description" : "This is a place holder for the code system which is fully supported through internal means (not by this code system)",
+    "uses" : {
+    },
+    "ValueSet-lab-orderCodes-eu-lab.html" : "Laboratory Order",
+    "ValueSet-lab-reportType-eu-lab.html" : "Laboratory Report Types",
+    "ValueSet-lab-obsCode-loinc-eu-lab.html" : "Laboratory Code: LOINC",
+    "ValueSet-lab-studyType-eu-lab.html" : "Laboratory Study Types",
+    "ValueSet-eHDSILabStudyType.html" : "eHDSI Laboratory Study Types"
+  },
+  {
+    "url" : "http://npu-terminology.org",
+    "version" : "INT 2026-09-30",
+    "status" : "active",
+    "name" : "NPUTerminology",
+    "title" : "NPU Terminology Code System",
+    "description" : "NPU Terminology International edition Code System. Generated from testdata/INTERNATIONAL_TOTAL__NPUCONCEPT_2026-09-30.xml on 2026-10-11 19:36",
+    "oids" : ["1.2.208.176.9.1"],
+    "uses" : {
+    },
+    "ValueSet-lab-obsCode-npu-eu-lab.html" : "Laboratory Code: NPU"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "ValueSet-results-presence-absence-uv-ips.html" : "Results Presence/Absence - IPS",
+    "ValueSet-lab-specimenType-eu-lab.html" : "Specimen Types",
+    "ValueSet-lab-laterality-eu-lab.html" : "Body Structure Laterality",
+    "ValueSet-results-blood-group-uv-ips.html" : "Results Blood Group - IPS",
+    "ValueSet-lab-siteQualifier-eu-lab.html" : "Body Structure Qualifier",
+    "ValueSet-lab-specimenContainer-eu-lab.html" : "Specimen Container",
+    "ValueSet-lab-specialty-eu-lab.html" : "Laboratory Specialty",
+    "ValueSet-lab-specimenAdditive-eu-lab.html" : "Specimen Additive",
+    "ValueSet-lab-technique-eu-lab.html" : "Laboratory Techniques",
+    "ValueSet-lab-speciesType-eu-vs.html" : "Types of species",
+    "ValueSet-results-microorganism-uv-ips.html" : "Results Microorganism - IPS"
+  }]
+}

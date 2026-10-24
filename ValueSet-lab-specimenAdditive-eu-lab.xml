@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="lab-specimenAdditive-eu-lab"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7europe.org/fhir/terminology/common/ValueSet/lab-specimenAdditive-eu-lab"/>
+  <version value="0.4.0"/>
+  <name value="LabSpecimenAdditiveEu"/>
+  <title value="Specimen Additive"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-24T21:10:34+00:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7europe.org"/>
+    </telecom>
+  </contact>
+  <description value="List of the specimen additives. Additives are commonly added to the vacutainer tubes to preserve the specimen for laboratory analysis"/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1259913003"/>
+        <display value="Heparin ammonium"/>
+      </concept>
+      <concept>
+        <code value="386961008"/>
+        <display value="Aprotinin"/>
+      </concept>
+      <concept>
+        <code value="29725000"/>
+        <display value="Heparin calcium"/>
+      </concept>
+      <concept>
+        <code value="21611007"/>
+        <display value="Boric acid"/>
+      </concept>
+      <concept>
+        <code value="30531001"/>
+        <display value="Calcium oxalate"/>
+      </concept>
+      <concept>
+        <code value="69519002"/>
+        <display value="Edetic acid"/>
+      </concept>
+      <concept>
+        <code value="372628006"/>
+        <display value="Edetate"/>
+      </concept>
+      <concept>
+        <code value="27763000"/>
+        <display value="Hydrochloric acid"/>
+      </concept>
+      <concept>
+        <code value="414407009"/>
+        <display value="Hirudin"/>
+      </concept>
+      <concept>
+        <code value="1256100007"/>
+        <display value="Edetate dipotassium"/>
+      </concept>
+      <concept>
+        <code value="1256101006"/>
+        <display value="Edetate tripotassium"/>
+      </concept>
+      <concept>
+        <code value="1256102004"/>
+        <display value="Heparin lithium"/>
+      </concept>
+      <concept>
+        <code value="387418006"/>
+        <display value="Edetate disodium"/>
+      </concept>
+      <concept>
+        <code value="412546005"/>
+        <display value="Sodium citrate"/>
+      </concept>
+      <concept>
+        <code value="50045009"/>
+        <display value="Heparin sodium"/>
+      </concept>
+      <concept>
+        <code value="6910009"/>
+        <display value="Sodium fluoride"/>
+      </concept>
+      <concept>
+        <code value="50306007"/>
+        <display value="Sodium tetraborate"/>
+      </concept>
+      <concept>
+        <code value="387168006"/>
+        <display value="Mannitol"/>
+      </concept>
+      <concept>
+        <code value="115281000146102"/>
+        <display value="Sodium formate"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

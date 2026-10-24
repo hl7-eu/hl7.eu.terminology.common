@@ -1,0 +1,361 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7europe.org/fhir/terminology/common/ValueSet/lab-certifiedRefMaterial-eu-lab> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "lab-certifiedRefMaterial-eu-lab"] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [ fhir:value "1"^^xsd:integer ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "draft" ]
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://hl7europe.org/fhir/terminology/common/ValueSet/lab-certifiedRefMaterial-eu-lab"] ;
+  fhir:ValueSet.version [ fhir:value "0.4.0"] ;
+  fhir:ValueSet.name [ fhir:value "LabCertifiedReferenceMaterialVS"] ;
+  fhir:ValueSet.title [ fhir:value "Laboratory Certified Reference Material"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-24T21:00:57+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "HL7 Europe"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Europe" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7europe.org" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "List of the coded concepts describing the certified reference material used for the calibration, typically used when the unit of the result is UCUM [IU]."] ;
+  fhir:ValueSet.copyright [ fhir:value "This material contains content from the NIBSC Product list (https://nibsc.org/NIBSC%20Product%20List%20-%20Feb%2024.pdf). The National Institute for Biological Standards and Control part of the UK Medicines and Healthcare products Regulatory Agency (MHRA)."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://nibsc.org" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06/140" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pertussis antiserum (human), anti-PT IgG, Lyophilized, 335 IU and anti-PT IgA 65 IU / ampoule; anti-FHA IgG 130 IU and anti-FHA IgA 65 IU / ampoule; anti-69K IgG 65 IU and anti-PT IgA 42 IU / ampoule" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "00/588" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatitis B virus surface antigen, subtype adw2, genotype A, Lyophilized, 33 IU/vial." ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01/600" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anti-toxoplasma serum (IgG), Lyophilized, 20 IU / ampoule." ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01/608" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Low Molecular Weight Heparin" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02/150" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood Coagulation Factor VIII and Von Willebrand Factor in Plasma, Human" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02/206" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood coagulation factor XIII, Lyophilized, Activity 0.91 IU/ampoule; Antigen 0.93 IU/ampoule" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02/342" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Protein C, Lyophilized, 0.85 IU/ampoule (function), 0.84 IU/ampoule (antigen)." ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03/116" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood coagulation factor V, Lyophilized, 0.74 IU of Factor V:C per ampoule" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03/228" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Protein S, Lyophilized, 0.83 IU/ampoule (total antigen), 0.81 IU/ampoule (free antigen), 0.77 IU/ampoule (function)." ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04/102" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood coagulation factor XI, plasma human, Lyophilized., 0.86 International Units per ampoule" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07/164" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anti-hepatitis B immunoglobulin, Lyophilized, 100 IU/ampoule" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07/316" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood coagulation factor VIII and von Willebrand factor, Lyophilized, Factor VIII: C 0.68 IU/ amp; Factor VIII:Antigen 1.04 IU/ amp; VWF:Antigen 1.00 IU/ amp; VWF:Ristocetin cofactor 0.87 IU/amp; VWF:Collagen binding 1.03 IU/amp; VWFpp 1.03 IU/amp" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07/364" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chorionic gonadotrophin, Lyophilized 179 International Units or 0.39 nmol per ampoule for calibration of immunossays, and 162 International Units per ampoule for calibration of biossay, ," ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08/204" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thyroid-stimulating antibody, Lyophilized, 0.113 IU / ampoule." ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08/258" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antithrombin, Lyophilized, Functional potency - 0.95 IU/ampoule, Antigenic potency - 0.96 IU/ampoule" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08/266" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sex hormone binding globulin (SHBG), Lyophilized, 180 IU / ampoule." ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09/162" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human cytomegalovirus DNA, Lyophilized, 5,000,000 IU/vial." ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09/172" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood coagulation factors II, VII, IX, X, Lyophilized, 0.89 IU (factor II), 0.99 IU (factor VII), 0.9 IU (factor IX), 0.89 IU (factor X) / ampoule." ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09/260" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Epstein Barr virus DNA, Lyophilized, 5,000,000 IU/ml" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09/264" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fibrinogen, Lyophilized, 2.7 mg/ampoule" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10/152" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HIV-1 RNA, Lyophilized, 185,000 IU/ml (5.27 log10 IU/ml)" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10/262" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diphtheria Antitoxin Human IgG, Lyophilized, 2 IU / ampoule" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10/264" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatitis B virus DNA, Lyophilized., 850,000 IU / vial." ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11/176" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heparin, low molecular weight, Lyophilized, Anti-Xa: 1068 IU/ampoule, Anti-Iia: 342 IU/ampoule" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11/234" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human serum immunoglobulin E, Lyophilized, 13,500 IU/mL" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11/700" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythropoietin, rDNA-derived, Lyophilized, 1,650 IU / ampoule." ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12/252" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A Disintegrin And Metalloprotease with ThromboSpondin type 1 motifs 13 (ADAMTS13), plasma, Lyophilized., Function: 0.91 IU/ampoule Antigen: 0.92 IU/ampoule" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14/114" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "JC polyomavirus DNA, Lyophilized., 7.0 log10 IU/ mL" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14/212" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BK polyomavirus DNA, Lyophilized., 7.2 log10 IU/ mL" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15/180" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Factor XI, plasma, human, Lyophilized, Functional activity: 0.71 IU per ampoule, Antigen: 0.78 IU per ampoule" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16/368" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HSV-1" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17/100" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prostate Specific Antigen (human)(total: PSA-ACT + free PSA)" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17/122" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HSV-2" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66/304" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insulin, human, for immunoassay, Lyophilized, 3 IU / ampoule." ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "67/086" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human serum immunoglobulins G, A, and M (IgG, IgA and IgM), Lyophilized, 100 IU IgG, 100 IU IgA and 100 IU IgM/ampoule." ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "67/343" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythropoietin, human, urinary, Lyophilized, 10 IU / ampoule." ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "68/356" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Renin, human, Lyophilized, 0.1 IU / ampoule." ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69/194" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glucagon, porcine, Lyophilized, 1.49 IU / ampoule." ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73/545" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Placental lactogen, human, for immunoassay, Lyophilized, 0.000 850 IU / ampoule." ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73/601" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carcinoembryonic antigen (CEA), Lyophilized, 100 IU/ampoule" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "75/551" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chorionic gonadotrophin, beta subunit, human, for immunoassay, Lyophilized, 70 IU / ampoule." ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "75/569" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chorionic gonadotrophin, alpha subunit, human, for immunoassay, Lyophilized, 70 IU / ampoule." ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "75/589" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chorionic gonadotrophin, human, Lyophilized, 650 IU / ampoule." ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78/554" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Luteinizing hormone, human, pituitary, alpha subunit, Lyophilized, 10 IU / ampoule." ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78/556" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Luteinizing hormone, human, pituitary, beta subunit, Lyophilized, 10 IU / ampoule." ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "79/500" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Parathyroid hormone, human, for immunoassay, Lyophilized, 0.1 IU / ampoule." ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "80/505" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human growth hormone, pituitary, Lyophilized, 4.4 IU / ampoule." ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "80/552" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Luteinizing hormone, human, pituitary, Lyophilized, 35 IU / ampoule." ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "81/565" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thyroid stimulating hormone, human, for immunoassay, Lyophilized, 11.5 x -3 log 10 IU / ampoule." ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82/585" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anti-poliovirus serum (Types 1, 2, 3), Lyophilized, 11 IU/ampoule (Type 1), 32 IU/ampoule (Type 2), 3 IU/ampoule (Type 3)" ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82/587" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Interferon Gamma (Human, Leukocyte derived)" ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83/501" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beta-thromboglobulin, Lyophilized, 500 IU/ampoule." ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83/505" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelet factor 4, Lyophilized, 400 IU/ampoule" ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83/575" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Follicle stimulating hormone, human, pituitary, Lyophilized, 80 IU / ampoule." ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "84/500" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prolactin, human, Lyophilized., 0.053 IU / ampoule." ]
+       ], [
+         fhir:index 55 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "85/506" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "C-reactive protein, Lyophilized, 0.049 IU/ampoule" ]
+       ], [
+         fhir:index 56 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "85/669" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrial natriuretic factor, human, Lyophilized, 2.5 IU / ampoule." ]
+       ], [
+         fhir:index 57 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "88/638" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thyroxine-binding globulin, Lyophilized, 30 IU / ampoule." ]
+       ], [
+         fhir:index 58 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89/620" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calcitonin, human, Lyophilized, 17.5 IU / ampoule." ]
+       ], [
+         fhir:index 59 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "91/554" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insulin-like growth factor I for bioassay, Lyophilized, 150 IU / ampoule." ]
+       ], [
+         fhir:index 60 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "91/624" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inhibin A, human, recombinant, Lyophilized, 150,000 IU / ampoule." ]
+       ], [
+         fhir:index 61 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "92/510" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Follicle stimulating hormone, human, recombinant for immunoassay, Lyophilized, 60 IU / ampoule." ]
+       ], [
+         fhir:index 62 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "92/654" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasminogen-Activator Inhibitor 1 (PAI-1), Lyophilized, Tissueplasminogen-activator: 27.5 IU of neutralising activity/ampoule. Urinary-plasminogen-activator: 7 IU of neutralising activity/ampoule." ]
+       ], [
+         fhir:index 63 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "94/572" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ferritin, recombinant, Lyophilized, 6.3 μg/ampoule" ]
+       ], [
+         fhir:index 64 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "96/670" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prostate specific antigen (90:10), Lyophilized, 1 μg total PSA per vial." ]
+       ], [
+         fhir:index 65 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "97/550" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Islet cell antibodies, Lyophilized, 20 units/ampoule of islet cell antibodies; 100 units/ampoule of anti-GAD65; 100 units/ampoule of anti-IA-2." ]
+       ], [
+         fhir:index 66 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "97/646" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anti-Hepatitis A Immunoglobulin, Human (W1041) WHO International Standard" ]
+       ], [
+         fhir:index 67 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "98/574" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Somatropin (rDNA-derived human growth hormone), Lyophilized, 1.95 mg protein / ampoule." ]
+       ], [
+         fhir:index 68 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AFP" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alphafoetoprotein, Lyophilized, 100,000 IU / ampoule." ]
+       ], [
+         fhir:index 69 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "RAI" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anti-rabies immunoglobulin, Lyophilized, 30 IU/ampoule" ]
+       ], [
+         fhir:index 70 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "rTF/16" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thromboplastin, Human, Recombinant, Plain 5th International Standard 2016." ]
+       ], [
+         fhir:index 71 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "RUBI-1-94" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anti-rubella immunoglobulin, Lyophilized, 1,600 IU/vial" ]
+       ], [
+         fhir:index 72 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "W1066" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rheumatoid arthritis serum, Lyophilized, 100 IU/ampoule" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://pei.de" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7657/12" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatitis D virus RNA, Lyophilized, 575,000 IU/mL" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://niaid.nih.gov" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Gxg01-902535" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Interferon gamma, human, recombinant, Lyophilized, 80,000 IU / ampoule." ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7europe.org/fhir/terminology/common/ValueSet/lab-certifiedRefMaterial-eu-lab.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

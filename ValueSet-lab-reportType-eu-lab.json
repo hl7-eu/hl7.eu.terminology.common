@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "lab-reportType-eu-lab",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 2
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "http://hl7europe.org/fhir/terminology/common/ValueSet/lab-reportType-eu-lab",
+  "version" : "0.4.0",
+  "name" : "LabReportTypesEuVs",
+  "title" : "Laboratory Report Types",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-24T21:10:34+00:00",
+  "publisher" : "HL7 Europe",
+  "contact" : [{
+    "name" : "HL7 Europe",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7europe.org"
+    }]
+  }],
+  "description" : "Laboratory Report Types.\nThis version includes only one code as suggested by the eHN guideline.\nCategory can be used for filtering per study type or specialty.",
+  "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "11502-2",
+        "display" : "Laboratory report"
+      }]
+    }]
+  }
+}
